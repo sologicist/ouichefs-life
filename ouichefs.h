@@ -17,6 +17,9 @@
 #define OUICHEFS_MAX_FILESIZE (1 << 22) /* 4 MiB */
 #define OUICHEFS_FILENAME_LEN 28
 #define OUICHEFS_MAX_SUBFILES 128
+#define BLOCK_NUMBER_MASK 0x000FFFFF  // Mask for the lower 20 bits
+#define BLOCK_SIZE_MASK 0xFFF00000    // Mask for the upper 12 bits
+
 
 /*
  * ouiche_fs partition layout
